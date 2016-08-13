@@ -1,0 +1,9 @@
+alias rgrep='grep -R'
+alias ll='ls -l'
+alias work='cd ~/IWR/'
+alias eclipseEmbedded='/opt/eclipseKepler/eclipse &'
+#alias cp='cp -i' #ein bisschen nervig
+alias hostsonline='nmap -sP 192.168.178.1/24'
+alias seminar='cd ~/ownCloud/Studium/SCybersecurity/8\ Principles\ of\ Kerberos/Seminararbeit/'
+alias monitoringMail='ssh -L 8080:localhost:19999 -N mail'
+alias muninMail='ssh -L 8080:localhost:80 -N mail'
