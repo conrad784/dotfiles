@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Conrad Sachweh
+	email = conrad@csachweh.de
+[push]
+	default = simple
+[color]
+	ui = auto
+[alias]
+	st = status
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ap = add --patch
+[help]
+	autocorrect = 1
