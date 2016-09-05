@@ -132,3 +132,4 @@ setopt nonomatch
 
 zstyle ':completion:*:hosts' hosts #$ssh_known_hosts #$_ssh_config #
 
+export VISUAL="emacs -nw"
