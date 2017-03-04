@@ -10,3 +10,5 @@ alias muninMail='ssh -L 8080:localhost:80 -N mail'
 
 alias webdev='sudo /opt/lampp/manager-linux-x64.run'
 alias pacclean3='sudo paccache -rk3'
+
+alias wetter='curl wttr.in/Heidelberg'
