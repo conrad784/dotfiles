@@ -62,6 +62,7 @@ plugins=(git
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:/home/conrad/.gem/ruby/2.4.0/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 autoload -Uz compinit promptinit
@@ -74,7 +75,7 @@ autoload -Uz run-help
 autoload -Uz run-help-git
 autoload -Uz run-help-svn
 autoload -Uz run-help-svk
-unalias run-help
+#unalias run-help
 alias help=run-help
 
 #export PROMPT = ${PWD/#$HOME/~}
@@ -136,6 +137,22 @@ setopt share_history
 
 setopt nonomatch
 
-zstyle ':completion:*:hosts' hosts #$ssh_known_hosts #$_ssh_config #
 
 export VISUAL="emacs -nw"
+
+function wetter { curl wttr.in/"$1"; }
+# export -f wetter
+
+#zstyle ':completion:*:ssh:*' hosts #$ssh_known_hosts #$_ssh_config #
+
+h=()
+if [[ -r ~/.ssh/config ]]; then
+  h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
+fi
+if [[ -r ~/.ssh/known_hosts ]]; then
+  h=($h ${${${(f)"$(cat ~/.ssh/known_hosts{,2} || true)"}%%\ *}%%,*}) 2>/dev/null
+fi
+if [[ $#h -gt 0 ]]; then
+  zstyle ':completion:*:ssh:*' hosts $h
+  zstyle ':completion:*:slogin:*' hosts $h
+fi
