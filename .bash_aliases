@@ -12,3 +12,6 @@ alias webdev='sudo /opt/lampp/manager-linux-x64.run'
 alias pacclean3='sudo paccache -rk3'
 
 alias wetter='curl wttr.in/Heidelberg'
+
+alias condaStart='source /opt/anaconda/bin/activate root'
+alias condaStop='source /opt/anaconda/bin/deactivate root'
