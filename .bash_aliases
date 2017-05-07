@@ -15,3 +15,5 @@ alias wetter='curl wttr.in/Heidelberg'
 
 alias condaStart='source /opt/anaconda/bin/activate root'
 alias condaStop='source /opt/anaconda/bin/deactivate root'
+
+alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
