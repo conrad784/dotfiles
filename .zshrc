@@ -101,7 +101,7 @@ ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[magenta]%})"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+#export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
  
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
