@@ -14,3 +14,5 @@
 	ap = add --patch
 [help]
 	autocorrect = 1
+[core]
+	excludesfile = /home/conrad/.gitignore_global
