@@ -16,3 +16,8 @@
 	autocorrect = 1
 [core]
 	excludesfile = /home/conrad/.gitignore_global
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
