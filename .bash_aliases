@@ -19,3 +19,5 @@ alias condaStop='source /opt/anaconda/bin/deactivate root'
 alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
 
 alias wieistmeineip='~/git/MyProjects/queryIP.sh'
+
+alias tellme='fortune -o | cowsay'
