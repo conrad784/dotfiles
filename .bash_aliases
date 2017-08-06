@@ -9,6 +9,7 @@ alias monitoringMail='ssh -L 8080:localhost:19999 -N mail'
 alias muninMail='ssh -L 8080:localhost:80 -N mail'
 
 alias webdev='sudo /opt/lampp/manager-linux-x64.run'
+alias simpleHttp='python -m http.server --bind 127.0.0.1'
 alias pacclean3='sudo paccache -rk3'
 
 alias wetterHD='curl wttr.in/Heidelberg'
