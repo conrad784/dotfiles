@@ -22,3 +22,4 @@ alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/p
 alias wieistmeineip='~/git/MyProjects/queryIP.sh'
 
 alias tellme='fortune -o | cowsay'
+alias unixtime='date +%s'
