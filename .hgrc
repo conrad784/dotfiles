@@ -1,0 +1,20 @@
+[ui]
+# name and email, e.g.
+# username = Jane Doe <jdoe@example.com>
+username = csachweh <conrad.sachweh@iwr.uni-heidelberg.de>
+ignore = ~/.hgignore_global
+
+[extensions]
+# uncomment these lines to enable some popular extensions
+# (see "hg help extensions" for more info)
+# pager =
+progress =
+# color =
+hgext.fetch=
+hgext.graphlog=
+hgk=
+hgext.keyword=
+churn = 
+
+[keywordmaps]
+Id = {file|basename} {node|short} {date|utcdate} {author|user}
