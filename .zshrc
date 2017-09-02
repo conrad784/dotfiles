@@ -159,3 +159,4 @@ if [[ $#h -gt 0 ]]; then
 fi
 
 export ANSIBLE_NOCOWS=1
+export BORG_PASSCOMMAND='secret-tool lookup conrad borg'
