@@ -23,4 +23,5 @@ alias wieistmeineip='~/git/MyProjects/queryIP.sh'
 
 alias tellme='fortune -o | cowsay'
 alias unixtime='date +%s'
-alias e='emacs'
+alias e='emacsclient -nc'
+alias open='xdg-open'
