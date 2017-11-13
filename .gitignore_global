@@ -1,3 +1,5 @@
 *~
 .idea/
 *.zip
+*#*
+.ipynb_checkpoints/
