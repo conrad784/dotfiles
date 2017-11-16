@@ -131,7 +131,7 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi'
-precmd() { eval "$PROMPT_COMMAND" }
+#precmd() { eval "$PROMPT_COMMAND" }
 
 setopt inc_append_history
 setopt share_history
