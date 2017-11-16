@@ -160,3 +160,7 @@ fi
 
 export ANSIBLE_NOCOWS=1
 export BORG_PASSCOMMAND='secret-tool lookup conrad borg'
+export ANSIBLE_VAULT_PASSWORD_FILE=~/private/ansible-vault
+
+# import z script
+. ~/git/z/z.sh
