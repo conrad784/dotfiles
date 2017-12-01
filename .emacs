@@ -45,5 +45,12 @@
     (ispell-change-dictionary change)
     (message "Dictionary switched from %s to %s" dic change)
     ))
+(defun latex-insert-compactitem ()
+  "Insert compactitem"
+  (interactive)
+  (insert "\\begin{compactitem}\n\n\\end{compactitem}"))
+
+
 
 (global-set-key (kbd "<f8>")   'fd-switch-dictionary)
+(global-set-key (kbd "<f5> c") 'latex-insert-compactitem)
