@@ -53,7 +53,6 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(git
 	 common-aliases
 	 archlinux
-	 autojump
 	 mercurial
 	 web-search
 	) 
@@ -163,4 +162,4 @@ export BORG_PASSCOMMAND='secret-tool lookup conrad borg'
 export ANSIBLE_VAULT_PASSWORD_FILE=~/private/ansible-vault
 
 # import z script
-. ~/git/z/z.sh
+#. ~/git/z/z.sh
