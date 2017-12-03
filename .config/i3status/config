@@ -7,8 +7,7 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-	
-        colors = true
+	colors = true
 	#color_good = "#BBBBBB"
 	#color_bad = "#CC1616"
 	#color_degraded = "#55858E"
@@ -21,8 +20,8 @@ order += "wireless _first_"
 order += "ethernet _first_"
 #order += "run_watch VPNC"
 order += "battery all"
-order += "cpu_temperature 0"
 order += "load"
+order += "cpu_temperature 0"
 order += "tztime local"
 
 wireless _first_ {
@@ -43,10 +42,12 @@ run_watch VPNC {
 
 battery all {
         format = "%status %percentage %remaining"
+	hide_seconds = true
+	integer_battery_capacity = true
         format_down = "No battery"
         status_chr = "⚡ CHR"
-        status_bat = "🔋 BAT"
-        status_unk = "? UNK"
+        status_bat = "BAT"
+        status_unk = "UNK"
         status_full = "☻ FULL"
         path = "/sys/class/power_supply/BAT%d/uevent"
         low_threshold = 10
@@ -57,11 +58,12 @@ tztime local {
 }
 
 load {
-        format = "%1min"
+        format = "L: %1min"
+	max_threshold = 3
 }
 
 cpu_temperature 0 {
-        format = "T: %degrees °C"
+        format = "%degrees°C"
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
 }
 
