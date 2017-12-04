@@ -219,6 +219,7 @@ for_window [title="Print Settings"] floating enable
 for_window [class="Keepassx2"] floating enable
 for_window [class="gitg"] floating enable
 for_window [class="VirtualBox Manager"] floating enable
+for_window [class="nm-connection-editor"] floating enable
 
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
