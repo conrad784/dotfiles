@@ -44,6 +44,7 @@ battery all {
         format = "%status %percentage %remaining"
 	hide_seconds = true
 	integer_battery_capacity = true
+	last_full_capacity = true
         format_down = "No battery"
         status_chr = "⚡ CHR"
         status_bat = "BAT"
