@@ -157,8 +157,8 @@ bindcode $mod+Shift+61 move workspace to output left
 bindcode $mod+61 move workspace to output right
 
 # cycle through active workspaces
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+Tab workspace next_on_output
+bindsym $mod+Shift+Tab workspace prev_on_output
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
