@@ -11,6 +11,7 @@ general {
 	#color_good = "#BBBBBB"
 	#color_bad = "#CC1616"
 	#color_degraded = "#55858E"
+	output_format = i3bar
         interval = 2
 }
 
