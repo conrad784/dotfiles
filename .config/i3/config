@@ -228,7 +228,10 @@ for_window [class="Nm-connection-editor"] floating enable
 #       windows, etc.
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
-for_window [window_role="EMsgComposer-*"] floating enable
+for_window [class="Evolution"] layout tabbed
+# can do more after declaration
+#for_window [class="M(?i)Player"] focus right; splitv; focus left, move right; layout tabbed
+#for_window [window_role="(EMsgComposer|EMailBrowser)-*"] floating enable
 
 #
 # Startup
