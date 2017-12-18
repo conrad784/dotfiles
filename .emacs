@@ -29,7 +29,8 @@
  ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t)
  '(large-file-warning-threshold 100000000)
- '(package-selected-packages (quote (auctex use-package jedi auto-complete))))
+ '(package-selected-packages (quote (auctex use-package jedi auto-complete)))
+ '(read-file-name-completion-ignore-case t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
