@@ -140,7 +140,9 @@ setopt nonomatch
 
 export VISUAL="emacs -nw"
 
+# custom functions
 function wetter { curl wttr.in/"$1"; }
+function pdfwordcount { pdftotext "$1" - | wc -w }
 # export -f wetter
 
 #zstyle ':completion:*:ssh:*' hosts #$ssh_known_hosts #$_ssh_config #
