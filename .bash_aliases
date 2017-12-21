@@ -25,3 +25,7 @@ alias tellme='fortune -o | cowsay'
 alias unixtime='date +%s'
 alias e='emacsclient -nc'
 alias open='xdg-open'
+
+alias mountiso='mount -o loop -t iso9660'
+alias bgd="bg && disown"
+alias ssh-dontstore="ssh -o \"UserKnownHostsFile /dev/null\""
