@@ -96,8 +96,8 @@ bindsym $mod+a focus parent
 # create workspace variables
 set $ws1 "1:web"
 set $ws2 "2:work"
-set $ws3 "3:mail"
-Set $ws4 "4"
+set $ws3 "3"
+Set $ws4 "4:mail"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -208,7 +208,7 @@ bindsym $mod+i exec "emacsclient -nc"
 workspace_auto_back_and_forth yes
 
 # rules
-assign [class="Evolution"] → $ws3
+assign [class="Evolution"] → $ws4
 
 assign [class="TelegramDesktop"] → $ws5
 assign [class="Signal"] → $ws5
