@@ -204,6 +204,7 @@ bindsym $mod+y scratchpad show
 bindsym Print exec scrot ~/Pictures/Screenshots/screenshot_%Y_%m_%d_%H_%M_%S.png
 bindsym $mod+u [urgent=latest] focus
 bindsym $mod+i exec "emacsclient -nc"
+bindsym $mod+t exec "/home/conrad/i3scripts/xfce4-terminal-pwd.sh"
 
 workspace_auto_back_and_forth yes
 
