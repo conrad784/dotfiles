@@ -23,6 +23,7 @@ order += "ethernet _first_"
 order += "battery all"
 order += "load"
 order += "cpu_temperature 0"
+order += "volume master"
 order += "tztime local"
 
 wireless _first_ {
@@ -72,4 +73,10 @@ cpu_temperature 0 {
 
 disk "/" {
         format = "%avail"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "pulse:alsa_output.pci-0000_00_1f.3.analog-stereo"
 }

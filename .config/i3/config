@@ -206,6 +206,11 @@ bindsym $mod+u [urgent=latest] focus
 bindsym $mod+i exec "emacsclient -nc"
 bindsym $mod+t exec "/home/conrad/i3scripts/xfce4-terminal-pwd.sh"
 
+# audio control
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && killall -SIGUSR1 i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && killall -SIGUSR1 i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && killall -SIGUSR1 i3status
+
 workspace_auto_back_and_forth yes
 
 # rules
@@ -250,7 +255,7 @@ exec --no-startup-id numlockx
 exec --no-startup-id xautolock -time 15 -locker "/usr/bin/i3lock -c 003f00"
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 exec --no-startup-id nextcloud
 
 # enable tapping of touchpad
