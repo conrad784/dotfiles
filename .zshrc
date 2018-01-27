@@ -6,7 +6,6 @@ ZSH=/usr/share/oh-my-zsh/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="mytheme"
-#ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,8 +50,6 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-	 common-aliases
-	 archlinux
 	 mercurial
 	 web-search
 	) 
@@ -129,16 +126,13 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi'
+#export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/zsh-history-$(date "+%Y-%m-%d").log; fi'
 #precmd() { eval "$PROMPT_COMMAND" }
 
 setopt inc_append_history
 setopt share_history
 
 setopt nonomatch
-
-
-export VISUAL="emacs -nw"
 
 # custom functions
 function wetter { curl wttr.in/"$1"; }
@@ -159,9 +153,9 @@ if [[ $#h -gt 0 ]]; then
   zstyle ':completion:*:slogin:*' hosts $h
 fi
 
+export VISUAL="emacs -nw"
 export ANSIBLE_NOCOWS=1
 export BORG_PASSCOMMAND='secret-tool lookup conrad borg'
 export ANSIBLE_VAULT_PASSWORD_FILE=~/private/ansible-vault
 
-# import z script
-#. ~/git/z/z.sh
+>/dev/null command -v hcloud && . <(hcloud completion zsh)
