@@ -12,7 +12,7 @@
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	ap = add --patch
-	pushall = !git remote | xargs -L1 git push --all
+	pushall = !git remote | xargs -L1 git push
 [help]
 	autocorrect = 1
 [core]
