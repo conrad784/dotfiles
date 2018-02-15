@@ -55,3 +55,9 @@
 
 (global-set-key (kbd "<f8>")   'fd-switch-dictionary)
 (global-set-key (kbd "<f5> c") 'latex-insert-compactitem)
+
+;; switch windows by geometry
+(global-set-key (kbd "C-x <up>") 'windmove-up)
+(global-set-key (kbd "C-x <down>") 'windmove-down)
+(global-set-key (kbd "C-x <right>") 'windmove-right)
+(global-set-key (kbd "C-x <left>") 'windmove-left)
