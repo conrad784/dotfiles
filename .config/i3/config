@@ -232,12 +232,14 @@ for_window [class="File-roller"] floating enable, border normal
 for_window [class="Pavucontrol"] floating enable, border normal
 for_window [title="Print Settings"] floating enable
 for_window [class="Keepassx2"] floating enable, resize set 800 480
+#for_window [class="KeePass2"] floating enable, resize set 1000 600
 #for_window [class="Gitg"] floating enable
 for_window [class="VirtualBox Manager"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
 for_window [title="Ediff"] floating enable
 for_window [class="matplotlib"] floating enable
 for_window [class="Pulseeffects"] floating enable
+for_window [class="MPlayer"] floating enable
 
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
@@ -246,6 +248,7 @@ for_window [class="Pulseeffects"] floating enable
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'role'#
 for_window [class="Evolution"] layout tabbed
+for_window [class="Firefox"] layout stacked
 # can do more after declaration
 #for_window [class="M(?i)Player"] focus right; splitv; focus left, move right; layout tabbed
 #for_window [window_role="(EMsgComposer|EMailBrowser)-*"] floating enable
