@@ -11,7 +11,7 @@ alias webdev='sudo /opt/lampp/manager-linux-x64.run'
 alias simpleHttp='python -m http.server 8000 --bind 127.0.0.1'
 alias pacclean3='sudo paccache -rk3'
 
-alias wetterHD='curl wttr.in/Heidelberg'
+alias wetterHD='curl wttr.in/Heidelberg,Germany'
 
 alias condaStart='source /opt/anaconda/bin/activate root'
 alias condaStop='source /opt/anaconda/bin/deactivate root'
