@@ -21,6 +21,7 @@
 
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
+(add-hook 'prog-mode-hook 'dumb-jump-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -29,7 +30,7 @@
  ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t)
  '(large-file-warning-threshold 100000000)
- '(package-selected-packages (quote (auctex use-package jedi auto-complete)))
+ '(package-selected-packages (quote (dumb-jump auctex use-package jedi auto-complete)))
  '(read-file-name-completion-ignore-case t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
