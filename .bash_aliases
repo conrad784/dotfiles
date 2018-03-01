@@ -29,3 +29,4 @@ alias mountiso='mount -o loop -t iso9660'
 alias bgd="bg && disown"
 alias ssh-dontstore="ssh -o \"UserKnownHostsFile /dev/null\""
 alias linesofcode='f(){ ( find . -name "$@" -print0 | xargs -0 cat ) | wc -l; unset -f f; }; f'
+alias webcamMplayer='mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 15 -vf screenshot'
