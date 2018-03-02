@@ -21,7 +21,8 @@
 
 (add-hook 'text-mode-hook 'flyspell-mode)
 (add-hook 'prog-mode-hook 'flyspell-prog-mode)
-(add-hook 'prog-mode-hook 'dumb-jump-mode)
+(when (require 'dumb-jump-mode nil 'noerror)
+  (add-hook 'prog-mode-hook 'dumb-jump-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
