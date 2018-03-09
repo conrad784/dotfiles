@@ -221,6 +221,9 @@ assign [class="TelegramDesktop"] → $ws5
 assign [class="Signal"] → $ws5
 assign [class="Rambox"] → $ws5
 
+assign [class="Spotify"] → $ws6
+assign [class="Vlc"] → $ws6
+
 # by APPLICATION (WM_CLASS)
 # Note: class is typically useful for applying custom settings to
 #       to entire applications, including child windows. If this
