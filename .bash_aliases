@@ -4,6 +4,7 @@ alias work='cd ~/IWR/'
 alias stud='cd ~/Nextcloud/Studium/'
 alias rm='rm -I'
 alias hostsonline='nmap -sP 192.168.178.1/24'
+alias availableciphers='nmap -sV --script ssl-enum-ciphers -p 443'
 alias monitoringMail='ssh -L 8080:localhost:19999 -N mail'
 alias muninMail='ssh -L 8080:localhost:80 -N mail'
 
