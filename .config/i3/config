@@ -277,6 +277,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id volumeicon
 exec --no-startup-id nextcloud
+exec --no-startup-id compton -b
 exec xset b off
 
 # enable tapping of touchpad
