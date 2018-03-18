@@ -265,6 +265,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 #exec --no-startup-id volumeicon
 exec --no-startup-id nextcloud
+exec xset b off
 
 # enable tapping of touchpad
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
