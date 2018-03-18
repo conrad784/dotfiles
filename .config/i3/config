@@ -253,6 +253,7 @@ for_window [title="Ediff"] floating enable
 for_window [class="matplotlib"] floating enable
 for_window [class="Pulseeffects"] floating enable
 for_window [class="MPlayer"] floating enable
+for_window [class="Arandr"] floating enable
 
 # by ROLE (WM_WINDOW_ROLE)
 # Note: window_role is Typically useful for effecting child windows
