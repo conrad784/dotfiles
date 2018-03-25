@@ -57,7 +57,7 @@ plugins=(git
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/home/conrad/.gem/ruby/2.4.0/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
