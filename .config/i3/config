@@ -304,5 +304,5 @@ bar {
 	#output primary
 	#tray_output primary
 	strip_workspace_numbers no
-	status_command ~/i3scripts/bar.sh
+	status_command i3status | ~/i3scripts/wrapper.py
 }
