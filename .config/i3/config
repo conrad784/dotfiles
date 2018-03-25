@@ -153,8 +153,8 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # move workspace to other display
-bindcode $mod+Shift+61 move workspace to output left
-bindcode $mod+61 move workspace to output right
+bindcode $mod+Shift+minus move workspace to output left
+bindcode $mod+minus move workspace to output right
 
 # cycle through active workspaces
 bindsym $mod+Tab workspace next_on_output
@@ -194,7 +194,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # my custom commands not for workspaces
-bindcode --release $mod+96 exec xfce4-terminal --drop-down
+bindcode --release $mod+F12 exec xfce4-terminal --drop-down
 bindsym Control+Mod1+l exec /home/conrad/i3scripts/screenlock.sh
 bindsym $mod+Shift+p exec "/home/conrad/.screenlayout/laptop.sh"
 bindsym $mod+Shift+o exec "/home/conrad/.screenlayout/dockingstation.sh"
