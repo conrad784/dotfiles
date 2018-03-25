@@ -1,3 +1,4 @@
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias rgrep='grep -R'
 alias ll='ls -l'
 alias work='cd ~/IWR/'

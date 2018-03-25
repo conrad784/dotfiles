@@ -1,8 +1,1 @@
-**/**
-!/.gitconfig
-!/.bashrc
-!/.bash_aliases
-!/.zshrc
-!/.emacs
-!/.zshrc
-!/.gitignore
+.cfg
