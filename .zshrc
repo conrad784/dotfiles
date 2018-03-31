@@ -156,6 +156,7 @@ fi
 export VISUAL="emacs -nw"
 export ANSIBLE_NOCOWS=1
 export BORG_PASSCOMMAND='secret-tool lookup conrad borg'
-export ANSIBLE_VAULT_PASSWORD_FILE=~/private/ansible-vault
+export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/private/ansible-vault"
+export PYTHONSTARTUP="$HOME/.pyrc"
 
 >/dev/null command -v hcloud && . <(hcloud completion zsh)
