@@ -18,6 +18,7 @@ alias unixtime='date +%s'
 alias mountiso='mount -o loop -t iso9660'
 alias condaStart='source /opt/anaconda/bin/activate root'
 alias condaStop='source /opt/anaconda/bin/deactivate root'
+alias getLoad='ps -o %cpu,%mem,cmd -C'
 
 # network
 alias wieistmeineip='~/git/MyProjects/queryIP.sh'
