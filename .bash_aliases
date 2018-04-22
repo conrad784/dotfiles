@@ -19,9 +19,10 @@ alias mountiso='mount -o loop -t iso9660'
 alias condaStart='source /opt/anaconda/bin/activate root'
 alias condaStop='source /opt/anaconda/bin/deactivate root'
 alias getLoad='ps -o %cpu,%mem,cmd -C'
+alias initRemoteGit='~/scripts/initRemoteGit.sh'
 
 # network
-alias wieistmeineip='~/git/MyProjects/queryIP.sh'
+alias wieistmeineip='~/scripts/queryIP.sh'
 alias hostsonline='nmap -sP 192.168.178.1/24'
 alias availableciphers='nmap -sV --script ssl-enum-ciphers -p 443'
 alias webdev='sudo /opt/lampp/manager-linux-x64.run'
