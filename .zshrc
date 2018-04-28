@@ -57,7 +57,7 @@ plugins=(git
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$PATH:/home/conrad/.gem/ruby/2.4.0/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -156,6 +156,7 @@ fi
 export VISUAL="emacs -nw"
 export ANSIBLE_NOCOWS=1
 export BORG_PASSCOMMAND='secret-tool lookup conrad borg'
-export ANSIBLE_VAULT_PASSWORD_FILE=~/private/ansible-vault
+export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/private/ansible-vault"
+export PYTHONSTARTUP="$HOME/.pyrc"
 
 >/dev/null command -v hcloud && . <(hcloud completion zsh)

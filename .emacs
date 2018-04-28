@@ -52,11 +52,16 @@
   "Insert compactitem"
   (interactive)
   (insert "\\begin{compactitem}\n\n\\end{compactitem}"))
+(defun latex-insert-itemize ()
+  "Insert itemize"
+  (interactive)
+  (insert "\\begin{itemize}\n\n\\end{itemize}"))
 
 
 
 (global-set-key (kbd "<f8>")   'fd-switch-dictionary)
 (global-set-key (kbd "<f5> c") 'latex-insert-compactitem)
+(global-set-key (kbd "<f5> i") 'latex-insert-itemize)
 
 ;; switch windows by geometry
 (global-set-key (kbd "C-x <up>") 'windmove-up)
