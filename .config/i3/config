@@ -95,10 +95,10 @@ bindsym $mod+a focus parent
 
 # create workspace variables
 set $ws1 "1:web"
-set $ws2 "2:work"
+set $ws2 "2"
 set $ws3 "3"
 Set $ws4 "4:mail"
-set $ws5 "5"
+set $ws5 "5:IM"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
