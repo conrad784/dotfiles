@@ -20,6 +20,8 @@ alias condaStart='source /opt/anaconda/bin/activate root'
 alias condaStop='source /opt/anaconda/bin/deactivate root'
 alias getLoad='ps -o %cpu,%mem,cmd -C'
 alias initRemoteGit='~/scripts/initRemoteGit.sh'
+alias ip='ip --color'
+alias ipb='ip --color --brief'
 
 # network
 alias wieistmeineip='~/scripts/queryIP.sh'
