@@ -246,6 +246,13 @@ assign [class="vlc"] → $ws6
 # Tip: To find out what these values might be run:
 #       xprop | grep -i 'class'
 # first part is the instance, the second part is the class 
+# by ROLE (WM_WINDOW_ROLE)
+# Note: window_role is Typically useful for effecting child windows
+#       such as instant messaging converstations, email composition
+#       windows, etc.
+# Tip: To find out what these values might be run:
+#       xprop | grep -i 'role'#
+
 for_window [class="File-roller"] floating enable, border normal
 for_window [class="Pavucontrol"] floating enable, border normal
 for_window [title="Print Settings"] floating enable
@@ -260,18 +267,24 @@ for_window [class="Pulseeffects"] floating enable
 for_window [class="MPlayer"] floating enable
 for_window [class="Arandr"] floating enable
 for_window [instance="Godot_Engine"] floating enable
-
-# by ROLE (WM_WINDOW_ROLE)
-# Note: window_role is Typically useful for effecting child windows
-#       such as instant messaging converstations, email composition
-#       windows, etc.
-# Tip: To find out what these values might be run:
-#       xprop | grep -i 'role'#
 for_window [class="Evolution"] layout tabbed
 for_window [class="Firefox"] layout stacked
 # can do more after declaration
 #for_window [class="M(?i)Player"] focus right; splitv; focus left, move right; layout tabbed
 #for_window [window_role="(EMsgComposer|EMailBrowser)-*"] floating enable
+
+# for STEAM
+# https://github.com/ValveSoftware/steam-for-linux/issues/1040
+for_window [class="^Steam$" title="^Friends$"] floating enable
+for_window [class="^Steam$" title="Steam - News"] floating enable
+for_window [class="^Steam$" title=".* - Chat"] floating enable
+for_window [class="^Steam$" title="^Settings$"] floating enable
+for_window [class="^Steam$" title=".* - event started"] floating enable
+for_window [class="^Steam$" title=".* CD key"] floating enable
+for_window [class="^Steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^Steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^Steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^Steam Keyboard$"] floating enable
 
 #
 # Startup
