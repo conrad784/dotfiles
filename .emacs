@@ -3,11 +3,11 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
+(package-initialize)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
@@ -15,6 +15,19 @@
 (use-package auto-complete-config
   :config
   (ac-config-default))
+
+(defvar myPackages
+  '(elpy
+    flycheck
+    py-autopep8))
+
+(mapc #'(lambda (package)
+    (unless (package-installed-p package)
+      (package-install package)))
+      myPackages)
+
+(when (require 'elpy nil t)
+  (elpy-enable))
 
 (let ((default-directory (expand-file-name user-emacs-directory "elpa")))
  (normal-top-level-add-subdirs-to-load-path))
@@ -32,7 +45,9 @@
  '(column-number-mode t)
  '(inhibit-startup-screen t)
  '(large-file-warning-threshold 100000000)
- '(package-selected-packages (quote (dumb-jump auctex use-package jedi auto-complete)))
+ '(package-selected-packages
+   (quote
+    (elpy dumb-jump auctex use-package jedi auto-complete)))
  '(read-file-name-completion-ignore-case t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
