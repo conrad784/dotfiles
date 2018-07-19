@@ -22,6 +22,7 @@ alias getLoad='ps -o %cpu,%mem,cmd -C'
 alias initRemoteGit='~/scripts/initRemoteGit.sh'
 alias ip='ip --color'
 alias ipb='ip --color --brief'
+alias tempDocker='docker run -it -v ~/dockerTransfer/:/transfer'
 
 # network
 alias wieistmeineip='~/scripts/queryIP.sh'
