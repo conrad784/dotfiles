@@ -48,7 +48,8 @@
  '(package-selected-packages
    (quote
     (elpy dumb-jump auctex use-package jedi auto-complete)))
- '(read-file-name-completion-ignore-case t))
+ '(read-file-name-completion-ignore-case t)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
