@@ -47,7 +47,7 @@
  '(large-file-warning-threshold 100000000)
  '(package-selected-packages
    (quote
-    (elpy dumb-jump auctex use-package jedi auto-complete)))
+    (markdown-mode elpy dumb-jump auctex use-package jedi auto-complete)))
  '(read-file-name-completion-ignore-case t)
  '(tool-bar-mode nil))
 (custom-set-faces

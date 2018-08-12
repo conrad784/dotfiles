@@ -23,6 +23,7 @@ alias initRemoteGit='~/scripts/initRemoteGit.sh'
 alias ip='ip --color'
 alias ipb='ip --color --brief'
 alias tempDocker='docker run -it -v ~/dockerTransfer/:/transfer'
+alias pandocMarkdownToHTML='f(){ pandoc "$@" -f markdown -t html -s; unset -f f; }; f'
 
 # network
 alias wieistmeineip='~/scripts/queryIP.sh'
