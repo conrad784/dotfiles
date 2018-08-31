@@ -13,6 +13,26 @@
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	ap = add --patch
 	pushall = !git remote | xargs -L1 git push
+	in = pull --dry-run
+	ci = commit
+
+	l = log -m --simplify-merges --color --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr) %Cblue%an <%ae>%Creset' --abbrev-commit --date=relative
+	glog = log -m --simplify-merges --color --graph --pretty=format:'%Cred%h%Creset %s %Cgreen(%ar) %Cblue%an <%ae>%Creset' --abbrev-commit --date=relative
+
+	untracked = ls-files --other --exclude-standard
+	staged = ls-files --staged
+	modified = ls-files --modified
+	deleted = ls-files --deleted
+	gitignored = ls-files -o -i --exclude-standard
+	sig = !git ls-files -v | grep "^[[:lower:]]"
+
+	# git change-commits GIT_COMMITTER_NAME "old name" "new name"
+	# or only in last commits
+	# git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" HEAD~10..HEAD
+	change-commits = "!f() { VAR1=$1; VAR='$'$1; OLD=$2; NEW=$3; echo \"Are you sure for replace $VAR $OLD => $NEW ?(y/N)\";read OK;if [[ \"$OK\" =~ ^([yY]|[yY][eE][sS])$ ]] ; then shift 3; git filter-branch --env-filter \"if [ \\\"${VAR}\\\" = '$OLD' ]; then export $VAR1='$NEW';echo 'to $NEW'; fi\" $@; fi;}; f "
+	# from https://help.github.com/articles/remove-sensitive-data
+	remove-file = "!f() { git filter-branch -f --index-filter \"git rm --cached --ignore-unmatch $1\" --prune-empty --tag-name-filter cat -- --all; }; f"
+
 [help]
 	autocorrect = 1
 [core]
