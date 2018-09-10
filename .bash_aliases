@@ -43,3 +43,4 @@ alias downloadVideo="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[e
 alias downloadAudio="youtube-dl --extract-audio --audio-format mp3"
 alias webcamMplayer='mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 15 -vf screenshot'
 alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
+alias myHcloud='hcloud server create --image debian-9 --ssh-key conrad@kronos --user-data-from-file ~/hcloud-init'
