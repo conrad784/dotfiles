@@ -10,6 +10,7 @@ alias rgrep='grep -R'
 alias ll='ls -l'
 alias rm='rm -I'
 alias e='emacsclient -nc'
+alias eb='emacsclient -n'
 alias open='xdg-open'
 alias bgd="bg && disown"
 alias ssh-dontstore="ssh -o \"UserKnownHostsFile /dev/null\""
