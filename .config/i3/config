@@ -319,9 +319,10 @@ bar {
         binding_mode       #2f343a #900000 #ffffff
     }
 
-	position top
-	#output primary
-	#tray_output primary
-	strip_workspace_numbers no
-	status_command i3status | ~/i3scripts/wrapper.py
+    position top
+    #output primary
+    #tray_output primary
+    #tray_padding 0
+    strip_workspace_numbers no
+    status_command i3status | ~/i3scripts/wrapper.py
 }
