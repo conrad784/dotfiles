@@ -43,11 +43,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(custom-safe-themes
+   (quote
+    ("617341f1be9e584692e4f01821716a0b6326baaec1749e15d88f6cc11c288ec6" default)))
  '(inhibit-startup-screen t)
  '(large-file-warning-threshold 100000000)
  '(package-selected-packages
    (quote
-    (markdown-mode elpy dumb-jump auctex use-package jedi auto-complete)))
+    (dracula-theme markdown-mode elpy dumb-jump auctex use-package jedi auto-complete)))
  '(read-file-name-completion-ignore-case t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -57,6 +60,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+(load-theme 'dracula t)
 
 (defun fd-switch-dictionary()
   (interactive)
