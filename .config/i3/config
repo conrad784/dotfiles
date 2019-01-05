@@ -302,6 +302,8 @@ exec --no-startup-id xmodmap ~/.Xmodmap
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 # set random wallpaper at restart
 exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
+# remap caps_lock to another ctrl
+exec_always setxkbmap -option caps:ctrl_modifier
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
