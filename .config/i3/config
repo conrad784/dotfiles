@@ -229,8 +229,8 @@ bindsym XF86Explorer exec --no-startup-id pcmanfm
 workspace_auto_back_and_forth yes
 
 # rules
+assign [class="Firefox"] → $ws1
 assign [class="Evolution"] → $ws4
-
 assign [class="TelegramDesktop"] → $ws5
 assign [class="Signal"] → $ws5
 assign [class="Rambox"] → $ws5
@@ -296,6 +296,7 @@ exec --no-startup-id compton -b
 exec --no-startup-id blueman-applet
 exec xset b off
 exec --no-startup-id xmodmap ~/.Xmodmap
+exec --no-startup-id firefox
 
 # enable tapping of touchpad
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
