@@ -72,11 +72,11 @@
 (defun latex-insert-compactitem ()
   "Insert compactitem"
   (interactive)
-  (insert "\\begin{compactitem}\n\n\\end{compactitem}"))
+  (insert "\\begin{compactitem}\n\\item\n\\end{compactitem}"))
 (defun latex-insert-itemize ()
   "Insert itemize"
   (interactive)
-  (insert "\\begin{itemize}\n\n\\end{itemize}"))
+  (insert "\\begin{itemize}\n\\item\n\\end{itemize}"))
 
 
 
