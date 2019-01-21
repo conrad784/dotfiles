@@ -47,3 +47,4 @@ alias downloadAudio="youtube-dl --extract-audio --audio-format mp3"
 alias webcamMplayer='mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 15 -vf screenshot'
 alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
 alias myHcloud='hcloud server create --image debian-9 --ssh-key conrad@kronos --user-data-from-file ~/hcloud-init'
+alias getmirrors='curl -s "https://www.archlinux.org/mirrorlist/?country=DE&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -'
