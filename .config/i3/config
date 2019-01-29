@@ -325,8 +325,8 @@ bar {
     }
 
     position top
+    tray_output primary
     #output primary
-    #tray_output primary
     #tray_padding 0
     strip_workspace_numbers no
     status_command i3status | ~/i3scripts/wrapper.py
