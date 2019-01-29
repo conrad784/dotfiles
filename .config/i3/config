@@ -298,14 +298,14 @@ exec xset b off
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id firefox
 
+# sanitize screen config at start (can be different for hosts ;))
+exec --no-startup-id ~/.screenlayout/default.sh
 # enable tapping of touchpad
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 # set random wallpaper at restart
 exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
 # remap caps_lock to another ctrl
 exec_always setxkbmap -option caps:ctrl_modifier
-# sanitize screen config at start (can be different for hosts ;))
-exec --no-startup-id ~/.screenlayout/default.sh
 # default is de on every host
 exec --no-startup-id setxkbmap de
 
