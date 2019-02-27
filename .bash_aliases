@@ -26,7 +26,7 @@ alias ipb='ip --color --brief'
 alias dmesg="dmesg -T"
 alias tempDocker='docker run -it -v ~/dockerTransfer/:/transfer'
 alias pandocMarkdownToHTML='f(){ pandoc "$@" -f markdown -t html -s --mathjax; unset -f f; }; f'
-alias remoteWindows="rdesktop -g $(xrandr -q | awk '/Screen 0/ {print int($8/1.28) $9 int($10/1.2)}' | sed 's/,//g') -r sound:off -r disk:share=/home/conrad/dockerTransfer -x l -z -P -u Administrator -p -"
+alias remoteWindows="rdesktop -g 1280x720 -r sound:off -r disk:share=/home/conrad/dockerTransfer -x l -z -P -u Administrator -p -"
 alias checkup='~/scripts/mycheckupdate.sh'
 
 # network
