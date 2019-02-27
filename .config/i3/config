@@ -213,6 +213,7 @@ bindsym XF86AudioLowerVolume exec ~/i3scripts/pulsevol.sh down && killall -SIGUS
 bindsym XF86AudioMute exec ~/i3scripts/pulsevol.sh toggle && killall -SIGUSR1 i3status
 bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle && killall -SIGUSR1 i3status
 bindsym $mod+Control+Up exec playerctl play-pause && killall -SIGUSR1 i3status
+bindsym $mod+Control+Down exec playerctl stop && killall -SIGUSR1 i3status
 bindsym $mod+Control+Left exec playerctl previous && killall -SIGUSR1 i3status
 bindsym $mod+Control+Right exec playerctl next && killall -SIGUSR1 i3status
 
