@@ -212,10 +212,12 @@ bindsym XF86AudioRaiseVolume exec ~/i3scripts/pulsevol.sh up && killall -SIGUSR1
 bindsym XF86AudioLowerVolume exec ~/i3scripts/pulsevol.sh down && killall -SIGUSR1 i3status
 bindsym XF86AudioMute exec ~/i3scripts/pulsevol.sh toggle && killall -SIGUSR1 i3status
 bindsym XF86AudioMicMute exec pactl set-source-mute 1 toggle && killall -SIGUSR1 i3status
-bindsym $mod+Control+Up exec playerctl play-pause && killall -SIGUSR1 i3status
-bindsym $mod+Control+Down exec playerctl stop && killall -SIGUSR1 i3status
-bindsym $mod+Control+Left exec playerctl previous && killall -SIGUSR1 i3status
-bindsym $mod+Control+Right exec playerctl next && killall -SIGUSR1 i3status
+bindsym $mod+Control+S exec echo spotify > ~/.myplayer
+bindsym $mod+Control+V exec echo vlc > ~/.myplayer
+bindsym $mod+Control+Up exec playerctl -p $(cat ~/.myplayer) play-pause && killall -SIGUSR1 i3status
+bindsym $mod+Control+Down exec playerctl -p $(cat ~/.myplayer) stop && killall -SIGUSR1 i3status
+bindsym $mod+Control+Left exec playerctl -p $(cat ~/.myplayer) previous && killall -SIGUSR1 i3status
+bindsym $mod+Control+Right exec playerctl -p $(cat ~/.myplayer) next && killall -SIGUSR1 i3status
 
 # fn keys
 # bindsym XF86MonBrightnessDown exec
