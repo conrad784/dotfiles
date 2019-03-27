@@ -272,6 +272,7 @@ for_window [class="Arandr"] floating enable
 for_window [instance="Godot_Engine"] floating enable
 for_window [class="Evolution"] layout tabbed
 for_window [class="Firefox"] layout stacked
+for_window [class="keepassxc" title="Unlock Database.*"] floating enable
 # can do more after declaration
 #for_window [class="M(?i)Player"] focus right; splitv; focus left, move right; layout tabbed
 #for_window [window_role="(EMsgComposer|EMailBrowser)-*"] floating enable
