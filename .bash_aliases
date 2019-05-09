@@ -28,6 +28,7 @@ alias tempDocker='docker run -it -v ~/dockerTransfer/:/transfer'
 alias pandocMarkdownToHTML='f(){ pandoc "$@" -f markdown -t html -s --mathjax; unset -f f; }; f'
 alias remoteWindows="rdesktop -g 1280x720 -r sound:off -r disk:share=/home/conrad/dockerTransfer -x l -z -P -u Administrator -p -"
 alias checkup='~/scripts/mycheckupdate.sh'
+alias containerMe='sudo systemd-nspawn -xD / -u $USER'
 
 # network
 alias wieistmeineip='~/scripts/queryIP.sh'
