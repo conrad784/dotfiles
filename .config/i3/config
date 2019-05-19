@@ -302,6 +302,7 @@ exec --no-startup-id blueman-applet
 exec xset b off
 exec --no-startup-id xmodmap ~/.Xmodmap
 exec --no-startup-id firefox
+exec pcmanfm -d
 
 # sanitize screen config at start (can be different for hosts ;))
 exec --no-startup-id ~/.screenlayout/default.sh
