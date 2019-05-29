@@ -43,7 +43,7 @@ alias pacclean3='sudo paccache -rk3'
 # misc
 alias wetterHD='curl wttr.in/Heidelberg,Germany'
 alias tellme='fortune -o | cowsay'
-alias downloadVideo="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best/'"
+alias downloadVideo="youtube-dl -f 'bestvideo+bestaudio' --merge-output-format mkv"
 alias downloadAudio="youtube-dl --extract-audio --audio-format mp3"
 alias webcamMplayer='mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 15 -vf screenshot'
 alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
