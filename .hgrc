@@ -14,7 +14,8 @@ hgext.fetch=
 hgext.graphlog=
 hgk=
 hgext.keyword=
-churn = 
+churn =
+hgext.shelve=
 
 [keywordmaps]
 Id = {file|basename} {node|short} {date|utcdate} {author|user}
