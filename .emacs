@@ -12,15 +12,13 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(use-package auto-complete-config
-  :config
-  (ac-config-default))
-
 (defvar myPackages
   '(elpy
     flycheck
     py-autopep8
-    ag))
+    ag
+    dracula-theme
+    company))
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
