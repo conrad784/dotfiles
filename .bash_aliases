@@ -27,7 +27,6 @@ alias dmesg="dmesg -T"
 alias tempDocker='docker run -it -v ~/dockerTransfer/:/transfer'
 alias pandocMarkdownToHTML='f(){ pandoc "$@" -f markdown -t html -s --mathjax; unset -f f; }; f'
 alias remoteWindows="rdesktop -g 1280x720 -r sound:off -r disk:share=/home/conrad/dockerTransfer -x l -z -P -u Administrator -p -"
-alias checkup='~/scripts/mycheckupdate.sh'
 alias containerMe='sudo systemd-nspawn -xD / -u $USER'
 
 # network
@@ -38,7 +37,9 @@ alias webdev='sudo /opt/lampp/manager-linux-x64.run'
 alias simpleHttp='python -m http.server 8000 --bind 127.0.0.1'
 
 # arch
+alias checkup='~/scripts/mycheckupdate.sh'
 alias pacclean3='sudo paccache -rk3'
+alias getmirrors='curl -s "https://www.archlinux.org/mirrorlist/?country=DE&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -'
 
 # misc
 alias wetterHD='curl wttr.in/Heidelberg,Germany'
@@ -48,4 +49,3 @@ alias downloadAudio="youtube-dl --extract-audio --audio-format mp3"
 alias webcamMplayer='mplayer tv:// -tv driver=v4l2:width=640:height=480:device=/dev/video0 -fps 15 -vf screenshot'
 alias toggleSleep='xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -T'
 alias myHcloud='hcloud server create --image debian-9 --ssh-key conrad@kronos --user-data-from-file ~/hcloud-init'
-alias getmirrors='curl -s "https://www.archlinux.org/mirrorlist/?country=DE&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -'
