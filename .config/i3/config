@@ -233,6 +233,7 @@ workspace_auto_back_and_forth yes
 
 # rules
 assign [class="Firefox"] → $ws1
+assign [class="keepassxc"] → $ws1
 assign [class="Evolution"] → $ws4
 assign [class="TelegramDesktop"] → $ws5
 assign [class="Signal"] → $ws5
@@ -309,7 +310,7 @@ exec --no-startup-id ~/.screenlayout/default.sh
 # enable tapping of touchpad
 exec_always xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 # set random wallpaper at restart
-exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpaper/*
+exec_always --no-startup-id feh --randomize --bg-max ~/Pictures/wallpaper/*
 # remap caps_lock to another ctrl
 exec_always setxkbmap -option caps:ctrl_modifier
 # default is de on every host
