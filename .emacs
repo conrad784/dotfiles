@@ -94,12 +94,16 @@
   "Insert itemize"
   (interactive)
   (insert "\\begin{itemize}\n\\item\n\\end{itemize}"))
-
+(defun python-debugger ()
+  "Insert python pdb line"
+  (interactive)
+  (insert "import pdb;pdb.set_trace()  # noqa: E702,E231"))
 
 
 (global-set-key (kbd "<f8>")   'fd-switch-dictionary)
 (global-set-key (kbd "<f5> c") 'latex-insert-compactitem)
 (global-set-key (kbd "<f5> i") 'latex-insert-itemize)
+(global-set-key (kbd "C-x p") 'python-debugger)
 
 ;; switch windows by geometry
 (global-set-key (kbd "C-x <up>") 'windmove-up)
