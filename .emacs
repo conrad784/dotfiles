@@ -5,7 +5,7 @@
 ;; You may delete these explanatory comments.
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
 (unless (package-installed-p 'use-package)
@@ -18,7 +18,8 @@
     py-autopep8
     ag
     dracula-theme
-    company))
+    company
+    rust-mode))
 
 (mapc #'(lambda (package)
     (unless (package-installed-p package)
