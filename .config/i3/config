@@ -308,7 +308,7 @@ exec --no-startup-id xautolock -corners 0-0- -time 15 -locker "/usr/bin/i3lock -
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nextcloud
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 exec --no-startup-id blueman-applet
 exec xset b off
 exec --no-startup-id xmodmap ~/.Xmodmap
